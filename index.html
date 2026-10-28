@@ -366,7 +366,7 @@ h1,h2{line-height:.96}
   <div class="wrap foot-in">
     <span class="logo"><span class="logo-mark" aria-hidden="true"></span>muffy</span>
     <span>Muffins faits maison, nappés de crème anglaise.</span>
-    <span>© 2026 Muffy · v12</span>
+    <span>© 2026 Muffy · v14</span>
   </div>
 </footer>
 
@@ -408,10 +408,11 @@ const stageEl=document.getElementById('stage'),floorEl=document.getElementById('
 function drawAna(){
   let p=1;if(!RM){const r=ana.getBoundingClientRect();p=clamp(-r.top/Math.max(1,r.height-innerHeight))}
   const e=RM?1:ease(clamp((p-.05)/.55));
-  LEL.forEach(([el,[a,b,rt]])=>{el.style.transform=`translate3d(0,${(a+(b-a)*e).toFixed(2)}%,0) `});
+  LEL.forEach(([el,[a,b,rt]])=>{el.style.transform=`translate3d(0,${(a+(b-a)*e).toFixed(2)}%,0)`});
   const H=stageEl.offsetHeight;
   floorEl.style.transform=`translate3d(0,${(-.231*(1-e)*H).toFixed(1)}px,0) scale(${(1+.12*e).toFixed(3)})`;
   floorEl.style.opacity=(.75+.25*e).toFixed(2);
+
 
   labs.forEach((l,i)=>l.classList.toggle('on',RM||e>.55+i*.1));
 }
