@@ -6,7 +6,7 @@
 <title>Muffy — Muffins nappés de crème anglaise</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Schibsted+Grotesk:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#FAFAF8;--ink:#1C1410;--soft:#6E625A;--line:#E8E3DE;
@@ -198,6 +198,47 @@ footer .logo{color:#fff}
   .slot img.pop{animation:none}
   .made-img img{transform:none}
 }
+
+/* Premium */
+:root{--serif:"Instrument Serif","Cormorant Garamond",Georgia,serif;--accent:#9A5B2E;--accent-h:#7E4822;--gold:#B98A55}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--accent:#C8894F;--accent-h:#D99B62;--on-accent:#1C1410;--gold:#C8894F}}
+:root[data-theme="dark"]{--accent:#C8894F;--accent-h:#D99B62;--on-accent:#1C1410;--gold:#C8894F}
+body{font-size:15.5px;letter-spacing:.005em}
+h1,h2,h3,h4,.logo,.total strong,.row-name,.wordmark{font-family:var(--serif);font-weight:400;letter-spacing:-.015em}
+h1,h2{line-height:.96}
+.logo{font-size:26px;gap:10px}
+.logo-mark{width:9px;height:9px;background:var(--gold)}
+.logo-mark::after{display:none}
+.nav-in{height:68px}
+.nav-links a{font-size:13px;letter-spacing:.06em}
+.btn{font-weight:500;font-size:13px;letter-spacing:.06em;min-height:44px;padding:0 26px;box-shadow:none}
+.btn:hover{transform:none}
+.link{font-weight:500;letter-spacing:.02em}
+.hero h1{font-size:clamp(3.4rem,6.8vw,6.2rem)}
+.hero h1 .accent{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:16px;line-height:1.7;margin-top:28px}
+@media (min-width:861px){.hero-in{grid-template-columns:1.1fr 1fr}}
+.hero-img{width:min(100%,370px)}
+.hero-img img{filter:drop-shadow(0 40px 40px rgba(40,20,8,.18))}
+@media (max-width:860px){.hero-img{width:min(58%,250px)}.hero{padding-top:100px}}
+.wordmark{font-weight:400;letter-spacing:-.03em;opacity:.6}
+.ana-head h2{font-size:clamp(2.2rem,3.8vw,3.2rem)}
+.lab h3{font-size:21px;font-weight:400}
+.lab::after{background:var(--gold)}
+.made h2{font-size:clamp(2.6rem,5vw,4.2rem)}
+.made-img{border-radius:4px}
+.intro h2{font-size:clamp(4.2rem,7.6vw,6.6rem)}
+.fam h3{font-size:44px}
+.card-img{border-radius:4px;box-shadow:none}
+.card h4{font-size:28px;letter-spacing:-.01em}
+.card .price{font-weight:500;letter-spacing:.03em;color:var(--on-cocoa-soft)}
+.chip,.tab{font-weight:500;letter-spacing:.04em}
+.boite h2{font-size:clamp(3.2rem,6vw,5rem)}
+.row-name{font-size:22px}
+.total strong{font-size:clamp(3rem,5.4vw,4rem)}
+.box{border-radius:6px}
+.infos h2{font-size:clamp(2.6rem,4.4vw,3.8rem)}
+.info h3{font-size:22px}
 </style>
 </head>
 <body>
@@ -307,7 +348,7 @@ footer .logo{color:#fff}
   <div class="wrap foot-in">
     <span class="logo"><span class="logo-mark" aria-hidden="true"></span>muffy</span>
     <span>Muffins faits maison, nappés de crème anglaise.</span>
-    <span>© 2026 Muffy · v9</span>
+    <span>© 2026 Muffy · v10</span>
   </div>
 </footer>
 
